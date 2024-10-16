@@ -1,4 +1,4 @@
-import 'package:form_kit/form_kit.dart';
+import 'package:formly/formly.dart';
 import 'package:test/test.dart';
 
 void main() {

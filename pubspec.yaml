@@ -1,9 +1,9 @@
-name: form_kit
+name: formly
 description: form with macros
 version: 1.0.0
 
-homepage: https://github.com/Ali1Ammar/form_kit
-repository: https://github.com/Ali1Ammar/form_kit
+homepage: https://github.com/Ali1Ammar/formly
+repository: https://github.com/Ali1Ammar/formly
 
 environment:
   sdk: ^3.5.3

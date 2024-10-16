@@ -3,6 +3,6 @@
 /// More dartdocs go here.
 library;
 
-export 'src/form_kit_base.dart';
+export 'src/formly_base.dart';
 
 // TODO: Export any libraries intended for clients of this package.
