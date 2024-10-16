@@ -1,7 +1,9 @@
 name: form_kit
 description: form with macros
 version: 1.0.0
-# repository: https://github.com/my_org/my_repo
+
+homepage: https://github.com/Ali1Ammar/form_kit
+repository: https://github.com/Ali1Ammar/form_kit
 
 environment:
   sdk: ^3.5.3
