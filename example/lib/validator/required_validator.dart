@@ -1,4 +1,4 @@
-import 'package:formly/src/validator/base_required_validator.dart';
+import 'package:formly/formly.dart';
 
 import 'localize.dart';
 

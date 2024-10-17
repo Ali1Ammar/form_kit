@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:formly/src/item/base_item.dart';
+import 'package:formly/src/pure/item/base_item.dart';
 
 class ValueItem<Value, Localize> extends BaseFormlyItem<Value, Localize> {
   late ValueNotifier<Value> controller;

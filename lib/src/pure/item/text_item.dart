@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:formly/src/item/base_item.dart';
+import 'package:formly/src/pure/item/base_item.dart';
 
 class TextItem<Localize> extends BaseFormlyItem<String, Localize> {
   late TextEditingController controller;

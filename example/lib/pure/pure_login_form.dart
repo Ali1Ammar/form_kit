@@ -1,6 +1,4 @@
-import 'package:formly/src/form/base_form.dart';
-import 'package:formly/src/item/text_item.dart';
-
+import 'package:formly/formly.dart';
 import '../validator/localize.dart';
 import '../validator/required_validator.dart';
 

@@ -1,4 +1,4 @@
-import 'package:formly/src/validator/base_validator.dart';
+import 'package:formly/src/pure/validator/base_validator.dart';
 
 abstract class RequiredStringValidator<Localize>
     extends BaseFormlyValidator<String, Localize> {

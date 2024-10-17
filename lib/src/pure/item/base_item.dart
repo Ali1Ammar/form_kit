@@ -1,5 +1,5 @@
-import 'package:formly/src/form/base_form.dart';
-import 'package:formly/src/validator/base_validator.dart';
+import 'package:formly/src/pure/form/base_form.dart';
+import 'package:formly/src/pure/validator/base_validator.dart';
 
 abstract class BaseFormlyItem<Value, Localize> {
   final BaseFormly<Localize> form;
