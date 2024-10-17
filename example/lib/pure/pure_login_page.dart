@@ -44,8 +44,6 @@ class _PureLoginPageState extends State<PureLoginPage> {
                 ),
                 ElevatedButton(
                   onPressed: () {
-                    print("object");
-                    print(form.validate());
                     if (!form.validate()) {
                       return;
                     }
