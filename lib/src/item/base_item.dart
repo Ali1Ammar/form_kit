@@ -7,8 +7,11 @@ abstract class BaseFormlyItem<Value, Localize> {
   Value get value;
   set value(Value value);
 
-  String? validate() => validator.translate(form.getLocalization());
-  String? validateUi(dynamic) => validator.translate(form.getLocalization());
+  String? validate() =>
+      validator.validate(value)?.translate(form.getLocalization());
+  String? validateUi(value) {
+    return validate();
+  }
 
   BaseFormlyItem({required this.form, required this.validator});
 }

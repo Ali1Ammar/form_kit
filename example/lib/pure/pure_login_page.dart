@@ -15,6 +15,10 @@ class _PureLoginPageState extends State<PureLoginPage> {
   @override
   void initState() {
     form = PureLoginForm();
+    form.getLocalization = () {
+      //this should set localization
+      return "Error message";
+    };
     super.initState();
   }
 
@@ -28,25 +32,29 @@ class _PureLoginPageState extends State<PureLoginPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: SafeArea(
-        child: Padding(
-          padding: EdgeInsets.all(16),
-          child: Column(
-            children: [
-              TextFormField(
-                controller: form.mail.controller,
-                validator: form.mail.validateUi,
-              ),
-              ElevatedButton(
-                onPressed: () {
-                  if (!form.validate()) {
-                    return;
-                  }
-
-                  print(form.mail.controller.text);
-                },
-                child: const Text("data"),
-              )
-            ],
+        child: Form(
+          key: form.key,
+          child: Padding(
+            padding: const EdgeInsets.all(16),
+            child: Column(
+              children: [
+                TextFormField(
+                  controller: form.mail.controller,
+                  validator: form.mail.validateUi,
+                ),
+                ElevatedButton(
+                  onPressed: () {
+                    print("object");
+                    print(form.validate());
+                    if (!form.validate()) {
+                      return;
+                    }
+                    print(form.mail.controller.text);
+                  },
+                  child: const Text("data"),
+                )
+              ],
+            ),
           ),
         ),
       ),

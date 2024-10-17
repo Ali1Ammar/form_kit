@@ -6,6 +6,6 @@ class RequiredValidator extends RequiredStringValidator<Localize> {
   const RequiredValidator();
   @override
   String translate(String localizations) {
-    throw "Error";
+    return "Error";
   }
 }
